@@ -1,7 +1,7 @@
 {
   "name": "brain",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/#std-label-install-community-ubuntu-pkg -Folow steps to install mongoDB comunity edition.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

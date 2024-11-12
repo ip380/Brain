@@ -137,13 +137,35 @@ The script will display a list of MongoDB commands and allow you to select one b
 
 ---
 
-## Summary
+## Step 3: Install express and mongoose
 
-By following these steps, you’ll have:
+1. In terminal go into prooject folder and type:
 
-- Easy-to-use aliases for MongoDB commands.
-- A helpful script that allows you to select MongoDB commands interactively.
+npm install express mongoose
+touch index.js
+code index.js
 
-This setup will save you time and simplify your MongoDB management. Let me know if you need any further assistance!
+       ```bash
+       const express = require('express');
+const mongoose = require('mongoose');
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Middleware
+app.use(express.json());
+
+// Example route
+app.get('/', (req, res) => {
+  res.send('Hello, Brain App!');
+});
+
+// Start server
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
+       ``` 
+
+
+
 
 
